@@ -1,0 +1,13 @@
+/*******tic-tac-toe******/
+#tic-tac-toe #game li {float:left;padding:0;list-style:none;text-align:center;margin-bottom:20px;color:#fff;height:60px;line-height:60px;font-size:40px;color:#ccc;display: block;width: 33%;}
+#tic-tac-toe #game li.disable{color:#fff}
+#tic-tac-toe #game {float:left;display: block;padding:0;}
+.new_span {width:226px; margin:0 auto; }
+.input-prepend span.pre_text {width:55px}
+.input-prepend .span1{width:93px}
+.input-prepend {margin-bottom:10px}
+.clr {clear:both; height:0}
+#tic-tac-toe h1 {text-align:center; font-size:28px}
+#tic-tac-toe li{background:none;color:#000;}
+.selected{background: #67dbdb;color: #fff;}
+/*******tic-tac-toe END******/
