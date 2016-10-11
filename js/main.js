@@ -20,7 +20,7 @@ var juego = {
         var seven = document.getElementById("seven");
         var eight = document.getElementById("eight");
         var nine = document.getElementById("nine");
-
+        var win = document.querySelector("#winner");
         if(turn){
             if(li.textContent === "+"){
               li.innerHTML = "X";
@@ -31,26 +31,26 @@ var juego = {
           }
         }
         turn = !turn;
-        if (one.textContent === "O" && two.textContent === "O" && three.textContent === "O"
-        || four.textContent === "O" && five.textContent === "O" && six.textContent === "O"
-        || seven.textContent === "O" && eight.textContent === "O" && nine.textContent === "O"
-        || three.textContent === "O" && five.textContent === "O" && seven.textContent === "O"
-        || one.textContent === "O" && five.textContent === "O" && nine.textContent === "O"
-        || one.textContent === "O" && four.textContent === "O" && seven.textContent === "O"
-        || two.textContent === "O" && five.textContent === "O" && eight.textContent === "O"
-        || three.textContent === "O" && six.textContent === "O" && nine.textContent === "O"){
-          var win = document.querySelector("#winner");
+        if (one.textContent === "O" && two.textContent === "O" && three.textContent === "O"||
+        four.textContent === "O" && five.textContent === "O" && six.textContent === "O"||
+        seven.textContent === "O" && eight.textContent === "O" && nine.textContent === "O"||
+        three.textContent === "O" && five.textContent === "O" && seven.textContent === "O"||
+        one.textContent === "O" && five.textContent === "O" && nine.textContent === "O"||
+        one.textContent === "O" && four.textContent === "O" && seven.textContent === "O"||
+        two.textContent === "O" && five.textContent === "O" && eight.textContent === "O"||
+        three.textContent === "O" && six.textContent === "O" && nine.textContent === "O"){
+
           win.innerHTML = "The winner is number 1";
           console.log("Ganooooo 1");
-        }else if(one.textContent === "X" && two.textContent === "X" && three.textContent === "X"
-        || four.textContent === "X" && five.textContent === "X" && six.textContent === "X"
-        || seven.textContent === "X" && eight.textContent === "X" && nine.textContent === "X"
-        || three.textContent === "X" && five.textContent === "X" && seven.textContent === "X"
-        || one.textContent === "X" && five.textContent === "X" && nine.textContent === "X"
-        || one.textContent === "X" && four.textContent === "X" && seven.textContent === "X"
-        || two.textContent === "X" && five.textContent === "X" && eight.textContent === "X"
-        || three.textContent === "X" && six.textContent === "X" && nine.textContent === "X"){
-          var win = document.querySelector("#winner");
+          
+        }else if(one.textContent === "X" && two.textContent === "X" && three.textContent === "X" ||
+        four.textContent === "X" && five.textContent === "X" && six.textContent === "X" ||
+        seven.textContent === "X" && eight.textContent === "X" && nine.textContent === "X" ||
+        three.textContent === "X" && five.textContent === "X" && seven.textContent === "X" ||
+        one.textContent === "X" && five.textContent === "X" && nine.textContent === "X" ||
+        one.textContent === "X" && four.textContent === "X" && seven.textContent === "X" ||
+        two.textContent === "X" && five.textContent === "X" && eight.textContent === "X" ||
+        three.textContent === "X" && six.textContent === "X" && nine.textContent === "X"){
           win.innerHTML = "The winner is number 2";
           console.log("Ganooooo 2");
         }
